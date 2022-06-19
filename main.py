@@ -38,16 +38,6 @@ def remove_from_dict():
     next_card()
 
 
-# def remove_from_dict():
-#     words_to_learn = [current_card]
-#     print(words_to_learn)
-#     df = pd.DataFrame(words_to_learn)
-#     df.to_csv('words_to_learn.csv', encoding='utf-8-sig', mode="a", index=False, header=False)
-#     dictionary.remove(current_card)
-#     print(len(dictionary))
-#     next_card()
-
-
 def flip_card():
     # English card side
     canvas.itemconfig(old_img, image=card_back)
