@@ -1,5 +1,4 @@
-[This is an image](https://i.imgur.com/7jOi4Qi.png)
-
+![This is an image](https://i.imgur.com/7jOi4Qi.png)
 # About
 This is a flashcard based application with almost 2000 Chinese characters with their respective pinyin and English translations for you to practice your vocabulary.
 
