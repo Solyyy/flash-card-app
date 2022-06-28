@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 import pandas as pd
-
 # ---------------------------- CONSTANTS ------------------------------- #
 BACKGROUND_COLOR = "#B1DDC6"
 TOP_TEXT = ("Ariel", 40, "italic")
@@ -10,7 +9,6 @@ PINYIN_TEXT = ("Ariel", 40, "italic")
 current_card = {}
 to_learn = {}
 # ---------------------------- Functions ------------------------------- #
-
 try:
     data = pd.read_csv("words_to_learn.csv")
 except FileNotFoundError:
