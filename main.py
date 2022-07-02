@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 import pandas as pd
-
 # ---------------------------- CONSTANTS ------------------------------- #
 BACKGROUND_COLOR = "#B1DDC6"
 TOP_TEXT = ("Ariel", 40, "italic")
@@ -10,7 +9,6 @@ PINYIN_TEXT = ("Ariel", 40, "italic")
 current_card = {}
 to_learn = {}
 # ---------------------------- Functions ------------------------------- #
-
 try:
     data = pd.read_csv("words_to_learn.csv")
 except FileNotFoundError:
@@ -67,13 +65,15 @@ card_back = PhotoImage(file="./images/card_back.png")
 
 #Buttons
 wrong_image = PhotoImage(file="./images/wrong.png")
-wrong_button = Button(image=wrong_image, bg=BACKGROUND_COLOR, command=next_card)
+wrong_button = Button(image=wrong_image, bg=BACKGROUND_COLOR, command=next_card, bd=0)
 wrong_button.grid(column=0, row=1)
 
 right_image = PhotoImage(file="./images/right.png")
-right_button = Button(image=right_image, bg=BACKGROUND_COLOR, command=remove_from_dict)
+right_button = Button(image=right_image, bg=BACKGROUND_COLOR, command=remove_from_dict, bd=0)
 right_button.grid(column=1, row=1)
 
 next_card()
+
+
 
 window.mainloop()
